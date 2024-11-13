@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+        <title>Mahlori's Portfolio</title>
+        <link rel="stylesheet" href="p.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" href="portfolio-icon-in-linear-style-vector.jpg">
+    </head>
+    <body>
+        <style>
+            *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+body{
+   
+    color: white;
+}
+
+
+.hearder{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+   background: transparent;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 100px;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s ease-in;
+}
+.navbar a:hover,
+.navbar a.Home{
+    color: #00abf0;
+}
+
+.home{
+    height: 100vh;
+    display: flex;
+    background-image: url(Last.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.masked-image {
+    clip-path: circle(50% at 50% 50%); /* Example: Circular mask */
+  }
+.home-content{
+    background: transparent;
+    max-width: 600px;
+
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.home-content h3{
+    color: #00abf0;
+    font-size: 30px;
+    font-weight: 500;
+}
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+    color: #000;
+}
+.home-content p:hover{
+    color: #fff;
+    transition: .5s;
+}
+.home-content .btn-box{
+    display: flex;
+    justify-content:space-evenly;
+    word-spacing: 1px;
+    width: 345px;
+    height: 56px;
+    background: transparent;
+
+}
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 50px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 350;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover{
+    color: #00abf0;
+}
+
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    background:transparent;
+    justify-content: space-evenly;
+    display: flex;
+}
+.home-sci a{
+    position:relative;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #00abf0;
+    background: transparent;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    
+
+}
+
+.home-sci a:hover{
+    color: #081b29;
+}
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before{
+    width: 100%;
+
+}
+
+
+
+
+
+.btn-box a:nth-child(2):hover{
+    color: #081b29;
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #00abf0;
+}
+.btn-box a:nth-child(2)::before{
+    background:#00abf0;
+}
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    background:#081b29;
+    z-index: -1;
+    transition: .5s;
+    
+}
+.btn-box a:hover::before{
+    width: 100%;
+}
+        </style>
+        <header class="hearder">
+            <a href="#" class="logo">Nexi</a>
+            <nav class="navbar">
+                <a href="Home" class="Home">Home</a>
+                <a href="About" >About</a>
+                <a href="Services" >Services</a>
+                <a href="portfolio" >Portfolio</a>
+                <a href="Contact" >Contact</a>
+            </nav>
+        </header>
+        <section class="home">
+            <div class="home-content">
+                <h1>Hi My Name is Mahlori Baloyi</h1>
+                <h3>I Am a Promising Software Developer</h3>
+                <p>I Am a first year student at The university Of Johanneburg
+                    i have Enrolled in a Course Known as Business information technology
+                    I Have Obtained a Distinction in Development Software In my First Year 
+                    and i am Looking Forward For Many More.
+                </p>
+                <div class="btn-box">
+                    <a href="Hire me">Hire me</a>
+                    <a href="Know me">Know me</a>
+                </div>
+                <div class="home-sci">
+                    <a href="www.facebook.com"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="www.tiktok.com"><i class='bx bxl-tiktok' ></i></a>
+                    <a href="www.linkedin.com"><i class='bx bxl-linkedin' ></i></a>
+                </div>
+            </div>
+        </section>
+    </body>
+
+</html>
